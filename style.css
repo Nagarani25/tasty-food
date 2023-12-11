@@ -1,0 +1,452 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:ProximaNova,arial,Helvetica Neue,sans-serif;
+}
+body{
+    background-color: black;
+}
+.header
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+.logo{
+    height: 200px;
+    width:auto;
+    margin-left: 25px;
+}
+.banner{
+    height: auto;
+    max-width: 100%;
+}
+.links{
+    float: right;
+    height: 15px;
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    margin-top: 70px;
+    margin-left: 25px;
+}
+.links:hover{
+    color: coral;
+}
+.signup{
+    background-color: black;
+    color: white;
+    margin-top: 72px;
+    margin-right: 30px;
+    padding: 15px 15px;
+}
+.signup:hover{
+    color: white;
+}
+.header-content{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.change-content::after {
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: changetext;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    content:" ";
+    color: black;
+    font-size: 3rem;
+}
+@keyframes changetext{
+    0%{
+        content: "Late night at office?";
+    }
+    20%{
+        content: "Hungry?";
+    }
+    40%{
+        content: "Unexpected guests?";
+    }
+    60%{
+        content: "Cooking gone wrong?";
+    }
+    80%{
+        content: "Movie marathon?";
+    }
+    100%{
+        content: "Game night?";
+    }
+}
+.header-content h2{
+    color: gray;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.locationinput{
+    width: 70%;
+    height: 25px;
+    color: gray;
+    margin: 40px auto auto 0px;
+    padding: 10px;
+    font-size: 18px !important;
+    font-weight: 500;
+    border-color: #fc8019;
+}
+.location{
+    border: none;
+    color: gray;
+    background-color: transparent;
+    position: absolute;
+    top: 347px;
+    left: 450px;
+    padding: 15px;
+}
+button:hover{
+    background-color: lightgray;
+}
+.findfood{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 0 2rem;
+    letter-spacing: 0;
+    color: white;
+    background-color: #fc8019;
+    line-height: 49px;
+}
+.cities{
+    font-size: 15px;
+    color: #a9abb2;
+    margin: 30px 0 10px 0;
+    letter-spacing: -.2px;
+}
+.citylist{
+    width: 570px;
+    list-style: none;
+    margin-top: 20px;
+}
+.list{
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #686b78;
+    line-height: 1.5;
+    letter-spacing: -.3px;
+    text-decoration: none;
+}
+.list:nth-child(even){
+    color:#93959f;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2b1e16;
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 275px;
+    margin-top:3px;
+}
+.text-head{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.text-detail{
+    font-size: 16px;
+    margin-bottom:auto;
+    color: #e0cbc1;
+    line-height: 1.5;
+    text-align: center;
+    padding: 110px;
+}
+.app{
+    display: grid;
+    height: 570px;
+    width: 100%;
+    grid-template-columns:50% 50%;
+    background-color: white;
+}
+.app-text{
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    width: 381px;
+    margin: auto;
+}
+.app-text h1{
+    font-size: 40px;
+    color: #282c3f;
+    font-weight: 600;
+    padding: 0px 0px 34px 6px;
+}
+.app-text p{
+    font-size: 19px;
+    font-weight: 300;
+    color:#7e808c;
+    padding: 0px 0px 0px 5px;
+    line-height: 1.3;
+}
+.app-button{
+    padding: 12px 0px 0px 2px;
+    margin: 5px 0px 0px 5px;
+}
+.app-image{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.footer
+{
+    display: flex;
+    padding: 50px 15% 10px;
+    color:white;
+    background-color: black;
+    grid-template-columns: 50% 50%;
+}
+.footer .col 
+{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    color: #777;
+    font-weight: 600;
+}
+.footer .col a
+{
+    display: flex;
+    color:#dcdde1;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.footer .col a:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.footer .row
+{
+    display: flex;
+    padding: 10px 0px;
+}
+.footer .btn{
+    display: inline-block;
+    cursor: pointer;
+    border-color: whitesmoke;
+    padding: 15px 0px;
+}
+#delivery
+{
+    padding: 50px 10% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+#delivery {
+    display: flex;
+    padding: 10px 20px;
+}
+#delivery .column 
+{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+#delivery .column a
+{
+    display: block;
+    color:#dcdde1;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0px 100px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#delivery .del
+{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+#delivery .column a:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.restaurants
+{
+    padding: 50px 10% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.restaurants{
+    display: flex;
+    padding: 10px 20px;
+}
+.restaurants .places
+{
+    flex-basis: 15%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 10px 0;
+    max-width:50%;
+}
+.restaurants .places a
+{
+    display: block;
+    color:#dcdde1;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 0px 2%;
+    flex-basis: 15%;
+    text-decoration: none;
+}
+.restaurants .places a:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.cusines
+{
+    padding: 50px 10% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.cusines{
+    display: flex;
+    padding: 10px 20px;
+}
+.Cusines .best
+{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+.cusines .best a
+{
+    display: block;
+    color:#dcdde1;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 5px 30px;
+    text-decoration: none;
+    line-break: 1.3;
+}
+.cusines .best a:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.explore
+{
+    padding: 20px 10% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.explore{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.explore h{
+    color: #93959f;
+    font-size: 14px;
+    font-weight: 700;
+}
+.explore p{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color:#dcdde1;
+    padding: 0px 15px;
+}
+.explore p:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.top{
+    margin-top: 40px;
+    padding: 5px 10px;
+}
+.top:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+.h-right
+{
+    padding: 20px 10% 7px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.h-right{
+    display:flex;
+}
+.swiggy{
+    height: 40px;
+    width:auto;
+    margin-left: 25px;
+}
+.h-right p{
+    display: block;
+    color: white;
+    padding: 7px 25%;
+}
+.h-right a{
+    display: block;
+    color:#dcdde1;
+    padding: 7px 1%;
+}
+.h-right a:hover{
+    transform: translateX(5px);
+    border: 2px solid var(--text-color);
+    color: white;
+}
+@media only screen and (max-width:531px) and (max-height:644px){
+    .logo{
+        height:10px;
+        width:100%;
+    }
+    .banner{
+         height: unset;
+         width: unset;
+    }
+    .restaurants{
+        padding: 5px 1px;
+        font-size:x-small;
+        font-weight: initial;
+    }
+    .restaurants .places a{
+        padding: 5px 1px;
+        font-size:x-small;
+        font-weight: initial;
+    }
+}
